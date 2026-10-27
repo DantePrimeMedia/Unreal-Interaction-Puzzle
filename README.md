@@ -17,6 +17,12 @@ The prototype explores how a player can interact with an environment through reu
 - Puzzle pieces, shortcuts, and an end-game trigger
 - HUD crosshair and main-menu widget
 
+## Prototype presentation
+
+The level intentionally uses simple blockout geometry, contrasting colors, and repeated puzzle elements to demonstrate reusable gameplay mechanics. This is a **systems prototype**, not a visually polished or content-complete game.
+
+**Planned screenshot gallery:** pressure plate and door, interactive cabinet and drawers, open doorway, and alternate puzzle station. Images will be linked here after the original screenshot files are uploaded to this private repository.
+
 ## Tools and demonstrated skills
 
 | Tools | Skills demonstrated |
