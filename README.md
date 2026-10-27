@@ -1,36 +1,51 @@
-# Unreal Engine Interaction & Puzzle Project
+# Locked Doors — Gameplay Systems Prototype
 
-An Unreal Engine 5.4 Blueprint project developed for a game design/programming course.
+**Unreal Engine 5.4 | Blueprints | First-person interaction and environmental puzzles**
+
+This coursework prototype establishes the foundational gameplay mechanics for **Locked Doors**, a larger puzzle-game concept. It is a functional proof of concept, **not a completed release of the full game**.
 
 ## Project overview
-This project explores first-person interaction and environmental puzzle mechanics. The repository includes a playable level, menu and HUD widgets, and reusable Blueprint interactions.
 
-## Implemented systems
-- Player movement and interaction inputs
-- Blueprint interaction interface
+The prototype explores how a player can interact with an environment through reusable Blueprint systems. It includes a playable level, interactive objects, puzzle components, a HUD, and menu assets.
+
+### Implemented systems
+
+- First-person player movement and interaction inputs
+- Blueprint interaction interface for interactable actors
 - Interactive doors, cabinet doors, drawers, and buttons
 - Physics-based object pickup
 - Puzzle pieces, shortcuts, and an end-game trigger
-- HUD crosshair and main menu
+- HUD crosshair and main-menu widget
 
-## Technology
-- Unreal Engine 5.4
-- Blueprints and Unreal Engine Modeling Tools
+## Tools and demonstrated skills
 
-## Running the project
-1. Install Unreal Engine 5.4.
-2. Clone this repository.
-3. Open `MyProject.uproject` in Unreal Engine.
-4. Open the `FinalProject` level if it does not open automatically.
-5. Use Play In Editor to try the interactions.
+| Tools | Skills demonstrated |
+| --- | --- |
+| Unreal Engine 5.4 | Gameplay prototyping and level implementation |
+| Blueprints | Event-driven gameplay logic and reusable interactions |
+| Unreal Engine Modeling Tools | Basic environment and object construction |
+| Git and GitHub | Branching, merges, source control, and project preparation |
 
-## Portfolio notes
-This is a coursework project presented to demonstrate practical Unreal Engine development. It is not a commercial release. The project uses Unreal Engine functionality subject to Epic Games' applicable licenses.
+## Open and test
 
-**Project status:** The author has confirmed that the current version runs in Unreal Engine. Features and polish reflect the state of the coursework project.
+1. Install **Unreal Engine 5.4**.
+2. Clone or download this repository.
+3. Open `MyProject.uproject`.
+4. Open the `FinalProject` level if it does not load automatically.
+5. Use **Play In Editor** to explore the interaction and puzzle mechanics.
 
-## Attribution
-Project-specific Blueprints, level design, and interaction work: Ryan Mills. Unreal Engine and any included engine-provided materials remain subject to Epic Games' applicable terms.
+The author has tested the clean portfolio copy in Unreal Engine 5.4 and confirmed that the project opens and that the primary interaction, puzzle, HUD, and menu features work.
 
-## Publication review
-This repository is currently private. Before publication, confirm any course-specific sharing restrictions and use a clean history that excludes generated editor logs and telemetry from early commits.
+## Development and learning
+
+The project began as a technical foundation for a more ambitious *Locked Doors* concept. The coursework focused on building working gameplay systems rather than completing the full game.
+
+One significant challenge was learning the Git branch workflow. After merging feature branches remotely, I initially did not realize that my local main branch also needed to be pulled to receive those changes. This made work appear to have disappeared even though it was preserved on GitHub. Resolving that misunderstanding improved my understanding of branching and synchronization.
+
+Course feedback mainly addressed the larger game idea and the GitHub workflow difficulties. **No post-coursework gameplay redesign is claimed.** For portfolio presentation, I prepared a separate repository with a clean history and clearer documentation, while preserving the original school repository privately.
+
+## Scope and attribution
+
+This is an educational gameplay prototype, not a commercial release. Project-specific Blueprint systems, interactions, and level work were created as coursework by Ryan Mills. Unreal Engine and any engine-provided assets remain subject to Epic Games' applicable terms. No rights to third-party assets are granted by this repository.
+
+**Publication status:** This repository is intentionally private pending final review of any applicable asset-redistribution and course-specific restrictions.
