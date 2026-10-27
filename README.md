@@ -21,7 +21,25 @@ The prototype explores how a player can interact with an environment through reu
 
 The level intentionally uses simple blockout geometry, contrasting colors, and repeated puzzle elements to demonstrate reusable gameplay mechanics. This is a **systems prototype**, not a visually polished or content-complete game.
 
-**Planned screenshot gallery:** pressure plate and door, interactive cabinet and drawers, open doorway, and alternate puzzle station. Images will be linked here after the original screenshot files are uploaded to this private repository.
+## Gameplay screenshots
+
+The following screenshots show distinct mechanics from the prototype rather than every variation of the repeated puzzle setups.
+
+### Pressure plate and door
+
+![Green cube on a pressure plate beside an open doorway](01-pressure-plate-door.png)
+
+### Interactive cabinet and drawers
+
+![Open cabinet doors and drawers with a green puzzle object inside](02-interactive-cabinet.png)
+
+### Open doorway
+
+![Opened colored door leading into the next prototype area](03-open-door.png)
+
+### Alternate puzzle station
+
+![Purple puzzle station in a blockout room](04-purple-puzzle-station.png)
 
 ## Tools and demonstrated skills
 
