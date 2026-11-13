@@ -87,4 +87,4 @@ The redesigned furniture also provided practice with Child Actor Components and 
 
 This is an educational prototype created as coursework by Ryan Mills and later refined for GAM-495 with development assistance. Unreal Engine and any engine-provided assets remain subject to Epic Games' applicable terms; this repository does not grant rights to third-party assets.
 
-**Publication status:** Kept private pending review of course requirements and any applicable asset redistribution restrictions.
+**Portfolio visibility:** This is the sanitized portfolio copy prepared for public sharing. The original academic repository remains private. The project uses Unreal Engine assets and tools subject to Epic Games' applicable terms.
