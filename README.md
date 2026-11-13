@@ -2,74 +2,89 @@
 
 **Unreal Engine 5.4 | Blueprints | First-person interaction and environmental puzzles**
 
-This coursework prototype establishes the foundational gameplay mechanics for **Locked Doors**, a larger puzzle-game concept. It is a functional proof of concept, **not a completed release of the full game**.
+*Locked Doors* is a coursework-based gameplay prototype and a work-in-progress puzzle-game concept. It demonstrates interactive objects, physics-driven puzzle mechanics, reusable Blueprint actors, and an explorable level. It is **not a completed or commercially released game**.
 
 ## Project overview
 
-The prototype explores how a player can interact with an environment through reusable Blueprint systems. It includes a playable level, interactive objects, puzzle components, a HUD, and menu assets.
+The player explores rooms, moves objects, and uses color-coded cubes and pressure plates to unlock doors. The original GAM-303 project was revisited for GAM-495 to make puzzle interactions clearer and improve the presentation and structure of the level.
 
 ### Implemented systems
 
-- First-person player movement and interaction inputs
-- Blueprint interaction interface for interactable actors
-- Interactive doors, cabinet doors, drawers, and buttons
-- Physics-based object pickup
-- Puzzle pieces, shortcuts, and an end-game trigger
-- HUD crosshair and main-menu widget
+- First-person movement, jumping, and left-mouse-button interaction
+- Blueprint interaction interface for doors, furniture, and puzzle objects
+- Contextual **LMB – Interact** HUD prompt, displayed when looking at an actor that implements the interaction interface
+- Physics-based pickup, dropping, and pressure-plate puzzle interactions
+- Colored puzzle cubes, unlocking doors, and progression toward an exit
+- Reusable interactive furniture, including a cupboard assembled from child actor components and a chest of drawers
+- Configurable material colors for furniture and environmental objects
+- A main-menu level with Play, Controls, Credits, and Quit options
 
-## Prototype presentation
+**Interaction-prompt limitation:** The current prompt identifies objects that implement the interaction interface; it does not yet account for every object's locked, open, or otherwise unavailable state.
 
-The level intentionally uses simple blockout geometry, contrasting colors, and repeated puzzle elements to demonstrate reusable gameplay mechanics. This is a **systems prototype**, not a visually polished or content-complete game.
+## GAM-495 refinement
 
-## Gameplay screenshots
+The refinement plan focused on clearer puzzle progression, more reliable interactions, better player guidance, and testing the door/puzzle flow. The revised version includes:
 
-The following screenshots show distinct mechanics from the prototype rather than every variation of the repeated puzzle setups.
+1. **Level redesign:** Reworked the room layout and expanded the furnished environment while keeping the focus on gameplay systems.
+2. **Reusable furniture:** Organized cupboard doors and drawers into reusable Blueprint actor assemblies rather than repeatedly placing separate pieces.
+3. **Customizable materials:** Added parameterized color materials for furniture and surfaces.
+4. **Contextual player feedback:** Added an on-screen interaction prompt using a camera-forward line trace and the existing Blueprint interaction interface.
+5. **Puzzle review:** Revisited and tested color-block and door interactions in the updated level.
 
-### Pressure plate and door
+The main-menu controls and rules remain available to explain the objective. The project intentionally retains simple geometry and visual styling so the focus stays on gameplay programming rather than finished art.
 
-![Green cube on a pressure plate beside an open doorway](01-pressure-plate-door.png)
+## Updated gameplay demonstration
 
-### Interactive cabinet and drawers
+[Watch the refined Locked Doors gameplay demonstration](Locked_Doors_Refined_Demo_720p.mp4)
 
-![Open cabinet doors and drawers with a green puzzle object inside](02-interactive-cabinet.png)
+The video shows the current prototype rather than the earlier GAM-303 level.
 
-### Open doorway
+## Screenshots — refined version
 
-![Opened colored door leading into the next prototype area](03-open-door.png)
+### Contextual interaction prompt
 
-### Alternate puzzle station
+![Interaction prompt displayed while looking at the chest of drawers](Screenshot%202026-11-12%20223513.png)
 
-![Purple puzzle station in a blockout room](04-purple-puzzle-station.png)
+### Main menu
+
+![Main menu with Play, Controls, Credits, and Quit buttons](Screenshot%202026-11-12%20223616.png)
+
+### Interactive cupboard and hidden cube
+
+![Open cupboard showing a red puzzle cube](Screenshot%202026-11-12%20223652.png)
+
+### Cube-operated door puzzle
+
+![Red cube on a pressure plate near an opened doorway](Screenshot%202026-11-12%20223711.png)
 
 ## Tools and demonstrated skills
 
 | Tools | Skills demonstrated |
 | --- | --- |
-| Unreal Engine 5.4 | Gameplay prototyping and level implementation |
-| Blueprints | Event-driven gameplay logic and reusable interactions |
-| Unreal Engine Modeling Tools | Basic environment and object construction |
-| Git and GitHub | Branching, merges, source control, and project preparation |
+| Unreal Engine 5.4 | Engine workflow, level layout, and gameplay prototyping |
+| Blueprints and Blueprint Interfaces | Modular actors, event-driven interactions, and puzzle logic |
+| UMG | Main-menu and contextual interaction UI |
+| Unreal Engine materials and modeling tools | Reusable furniture, customizable materials, and prototype environments |
+| Git and GitHub | Version control, feature branches, merges, and documentation |
 
 ## Open and test
 
 1. Install **Unreal Engine 5.4**.
 2. Clone or download this repository.
-3. Open `MyProject.uproject`.
-4. Open the `FinalProject` level if it does not load automatically.
-5. Use **Play In Editor** to explore the interaction and puzzle mechanics.
+3. Open `MyProject.uproject` in Unreal Engine.
+4. Open the **MainMenu** level to start with the menu; if opening the gameplay map directly, use **FinalProject**.
+5. Use **Play In Editor** to try the movement, furniture interactions, and color-block puzzles.
 
-The author has tested the clean portfolio copy in Unreal Engine 5.4 and confirmed that the project opens and that the primary interaction, puzzle, HUD, and menu features work.
+The creator has tested the key gameplay interactions in the updated level. The repository contains the Unreal project sources and assets, **not a packaged standalone game**.
 
 ## Development and learning
 
-The project began as a technical foundation for a more ambitious *Locked Doors* concept. The coursework focused on building working gameplay systems rather than completing the full game.
+The original coursework established the interaction and puzzle systems; the GAM-495 iteration focused on improving the player experience and making the project easier to demonstrate. Adding contextual prompts required investigating Blueprint interfaces, nested actors, collision detection, and camera line traces. One particularly useful debugging lesson was correcting a vector-by-vector multiplication that unintentionally zeroed parts of the camera direction; multiplying the forward vector by a single distance value fixed unreliable detection.
 
-One significant challenge was learning the Git branch workflow. After merging feature branches remotely, I initially did not realize that my local main branch also needed to be pulled to receive those changes. This made work appear to have disappeared even though it was preserved on GitHub. Resolving that misunderstanding improved my understanding of branching and synchronization.
-
-Course feedback mainly addressed the larger game idea and the GitHub workflow difficulties. **No post-coursework gameplay redesign is claimed.** For portfolio presentation, I prepared a separate repository with a clean history and clearer documentation, while preserving the original school repository privately.
+The redesigned furniture also provided practice with Child Actor Components and material parameters. The separate portfolio repository retains a cleaner project history, while the original academic version is preserved privately.
 
 ## Scope and attribution
 
-This is an educational gameplay prototype, not a commercial release. Project-specific Blueprint systems, interactions, and level work were created as coursework by Ryan Mills. Unreal Engine and any engine-provided assets remain subject to Epic Games' applicable terms. No rights to third-party assets are granted by this repository.
+This is an educational prototype created as coursework by Ryan Mills and later refined for GAM-495 with development assistance. Unreal Engine and any engine-provided assets remain subject to Epic Games' applicable terms; this repository does not grant rights to third-party assets.
 
-**Publication status:** This repository is intentionally private pending final review of any applicable asset-redistribution and course-specific restrictions.
+**Publication status:** Kept private pending review of course requirements and any applicable asset redistribution restrictions.
